@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Cooper"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-08-05 07:45:32 "/>
+        <attribute name="created" value="Q29vcGVyO0xFTy1QQzsyMDIyLTA4LTA1OyIwNzoxNzo1NyAiOzIyMzM="/>
+        <attribute name="edited" value="Q29vcGVyO0xFTy1QQzsyMDIyLTA4LTA1OyIwNzo0NTozMiAiOzE7MjMzNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sexo" type="String" array="False" size=""/>
+            <declare name="idade" type="Integer" array="False" size=""/>
+            <input variable="sexo"/>
+            <input variable="idade"/>
+            <if expression="sexo = &quot;homem&quot;">
+                <then>
+                    <if expression="idade &lt; 18">
+                        <then>
+                            <output expression="&quot;Voc&#234; &#233; homem e menino&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Voc&#234; &#233; homem e maior de idade&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="idade &lt; 18">
+                        <then>
+                            <output expression="&quot;Voc&#234; &#233; mulher e menina&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Voc&#234; &#233; mulher maior de idade&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

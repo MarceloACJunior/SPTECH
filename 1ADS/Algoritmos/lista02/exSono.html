@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Sono</title>
+</head>
+
+<body>
+
+    <h1>Exercicio Sono</h1>
+    <h2>Lista 02</h2>
+
+    <label for="iptSono">Digite a quantidade de horas que você dormiu</label>
+    <input type="text" name="iptSono" id="iptSono">
+    <button onclick="calcular()">Calcular</button>
+    <div id="res"></div>
+
+</body>
+
+</html>
+
+<script>
+    function calcular() {
+        var fase1 = iptSono.value - iptSono.value * 0.95;
+        var fase2 = iptSono.value - iptSono.value * 0.55;
+        var fase3 = iptSono.value - iptSono.value * 0.70;
+        var fase4 = iptSono.value - iptSono.value * 0.80;
+
+        res.innerHTML = '<br>';
+        res.innerHTML = 'Ao dormir ' + iptSono.value  + ' horas, você dormiu: <br>';
+        res.innerHTML += fase1 + '<br>';
+        res.innerHTML += fase2 + '<br>';
+        res.innerHTML += fase3 + '<br>';
+        res.innerHTML += fase4;
+    }
+</script>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 05</title>
+</head>
+
+<body>
+    <h1>Exercicio 05</h1>
+    <h2>Lista 02</h2>
+
+    <label for="nome">Digite o nome do guerreiro </label>
+    <input type="text" name="nome" id="nome">
+    <label for="ki">Digite o ki normal do guerreiro </label>
+    <input type="text" name="ki" id="ki">
+    <button onclick="formas()">Ver ki em cada forma</button>
+
+</body>
+
+</html>
+
+<script>
+    function formas() {
+        alert(nome.value + " em sua forma Super Sayajin tem o ki de " + (Number(ki.value) * 50));
+        alert(nome.value + " em sua forma Super Sayajin 2 tem o ki de " + (Number(ki.value) * 100));
+    }
+</script>

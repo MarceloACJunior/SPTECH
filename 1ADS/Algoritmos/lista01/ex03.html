@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 03</title>
+</head>
+
+<body>
+    
+    <h1>Lista 01</h1>
+    <h2>Exercício 03</h2>
+
+    <form action="" method="get">
+        <label for="time">Digite o nome do time: </label>
+        <input type="text" name="time" id="time">
+        <label for="mundiais">Digite a quantidade de mundiais: </label>
+        <input type="text" name="mundiais" id="mundiais">
+        <input type="submit" value="Amo meu time" onclick="fifa()">
+    </form>
+
+</body>
+
+</html>
+
+<script>
+
+    function fifa() {
+
+        alert("O time " + time.value + " tem " + mundiais.value + " mundiais da FIFA.");
+
+    }
+
+</script>

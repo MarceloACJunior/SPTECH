@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 02</title>
+</head>
+
+<body>
+    <h1>Exercicio 01</h1>
+    <h2>Lista 02-2</h2>
+
+    <label for="anterior">Digite seu saldo anterior</label><br>
+    <input type="text" name="anterior" id="anterior"><br><br>
+    <label for="debito">Digite o valor de débito</label><br>
+    <input type="text" name="debito" id="debito"><br><br>
+    <label for="credito">Digite o valor de crédito</label><br>
+    <input type="text" name="credito" id="credito"><br>
+    <button onclick="calc()">Calcular</button><br><br>
+    <div id="result">👇Resultado👇</div>
+</body>
+
+</html>
+
+<script>
+    function calc() {
+        var saldoFinal = Number(anterior.value) + Number(credito.value) - Number(debito.value);
+        var diferenca = saldoFinal - Number(anterior.value);
+        var proporcao = (saldoFinal / Number(anterior.value)) * 100;
+        var movimentacao = Number(credito.value) - Number(debito.value);
+
+        result.innerHTML += `<br>`
+        result.innerHTML += `<br>Saldo Anterior: R$ ${anterior.value}`
+        result.innerHTML += `<br>Movimentação: R$ ${movimentacao.toFixed(2)}`
+        result.innerHTML += `<br>Saldo Final: R$ ${saldoFinal.toFixed(2)}`
+        result.innerHTML += `<br>Diferença: R$ ${diferenca.toFixed(2)}`
+        result.innerHTML += `<br>Proporção: R$ ${proporcao.toFixed(2)}`
+        anterior.value = ''
+        debito.value = ''
+        credito.value = ''
+    }
+</script>

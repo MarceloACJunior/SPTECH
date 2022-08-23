@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 22</title>
+</head>
+
+<body>
+    <h1>Exercicio 22</h1>
+    <h2>Lista 02</h2>
+
+    <label for="votosZe">Digite a quantidade de votos que o Zé Buduia teve na eleição</label><br>
+    <input type="text" name="votosZe" id="votosZe"><br><br>
+    <label for="votosMaria">Digite a quantidade de votos que a Maria Bigodenha teve na eleição</label><br>
+    <input type="text" name="votosMaria" id="votosMaria"><br><br>
+    <label for="votosBrancos">Digite a quantidade de votos brancos que houveram na eleição</label><br>
+    <input type="text" name="votosBrancos" id="votosBrancos"><br><br>
+    <label for="votosBrancos">Digite a quantidade de votos nulos que houveram na eleição</label><br>
+    <input type="text" name="votosNulos" id="votosNulos"><br><br>
+
+    <button onclick="calcular()">Resultado da eleição</button>
+    <div id="resultado">Resultado</div>
+</body>
+
+</html>
+
+<script>
+    function calcular() {
+        var total = Number(votosZe.value) + Number(votosMaria.value) + Number(votosBrancos.value) + Number(votosNulos.value);
+        var zeBuduia = ((total * Number(votosZe.value)) / total) / 2;
+        var mariaBigodenha = (Number(votosMaria.value) / total) * 100;
+        var invalidos = ((Number(votosBrancos.value) + Number(votosNulos.value)) / total) * 100;
+
+        resultado.innerHTML = "<br>"
+        resultado.innerHTML += "<br> Total de votos: " + total;
+        resultado.innerHTML += "<br> Ze Buduia: " + zeBuduia + "%" + " (" + votosZe.value +") votos";
+        resultado.innerHTML += "<br> Maria Bigodenha: " + mariaBigodenha + "%" + " (" + votosMaria.value +") votos";
+        resultado.innerHTML += "<br> Inválidos: " + invalidos + "%" + " (" + (Number(votosBrancos.value) +
+                                 Number(votosNulos.value)) +") votos";
+    }
+</script>

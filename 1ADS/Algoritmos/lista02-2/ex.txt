@@ -1,0 +1,95 @@
+1 - O Sr. Manoel precisa de ajuda para organizar e estabelecer o pre�o de vendas de suas mercadorias e encontrar a margem de lucro de cada item.
+
+Para isso crie um programa conforme descrito abaixo.
+
+Receber:
+
+�         Nome do produto
+
+�         Quantidade
+
+�         Pre�o unit�rio de compra
+
+Tenha um bot�o �Calcular pre�o e margem de venda� que quando clicado realize os seguintes passos:
+
+�         Calcular o pre�o unit�rio de venda (� o pre�o unit�rio de compra acrescido de 22%)
+
+�         Calcular o valor de venda total (� o pre�o unit�rio de venda multiplicado pela quantidade)
+
+�         Calcular o lucro total do produto (� o lucro unit�rio multiplicado pela quantidade).
+
+�         Montar uma frase contendo os itens descrito a seguir e mostrar essa frase sem apagar as linhas anteriores.
+
+          o   Nome do produto,
+
+          o   quantidade,
+
+          o   pre�o unit�rio de compra,
+
+          o   pre�o unit�rio de venda,
+
+          o   valor de venda total,
+
+          o   lucro total do produto
+
+          o   pre�o unit�rio tributado (� o pre�o unit�rio somado a R$ 1,25)
+
+ 
+2 - A contabilidade �Balan�a� est� precisando de um programa para ajudar a fazer o controle de suas contas cont�beis.
+
+Para isso fa�a um programa para realizar os seguintes itens:
+
+Receber
+
+�         Saldo anterior
+
+�         Valor de d�bito
+
+�         Valor de cr�dito
+
+Tenha um bot�o �Calcular� que quando clicado fa�a os seguintes passos:
+
+�         Calcular o saldo final, sendo saldo final � o saldo anterior adicionado com o valor de cr�dito e subtra�do com o valor de d�bito.
+
+�         Calcular a diferen�a entre o saldo anterior e o saldo final.
+
+�         Calcular a propor��o do saldo final em rela��o ao saldo inicial ((saldoFinal / saldoInicial )*100)
+
+�         Montar uma frase contendo:
+
+          o   Saldo anterior
+
+          o   Movimenta��o (� valor de cr�dito menos o valor de d�bito).
+
+          o   E os tr�s resultados dos c�lculos acima.
+
+�         Mostar a frase criada acima
+
+�         Limpar os campos de entrada.
+
+ 
+
+3 -Crie um programa que simule uma determinada situa��o na compra de um carro financiado.
+
+No Brasil, devido ao "status" que carro d� e � falta de educa��o financeira do brasileiro m�dio, � comum 2 erros financeiros gritantes na compra de carros: Comprar um carro 0km e comprar via financiamento muitas vezes, como em 24x ou 36x por exemplo.
+
+Assim, seu programa vai mostrar ao usu�rio, de maneira gr�fica, o qu�o � ruim comprar um carro 0km e financiado.
+
+a) Solicite o valor do carro a vista
+
+b) Solicite a taxa de juros a.m. (ao m�s)
+
+c) Solicite a quantidade de parcelas
+
+d) Ao clicar em "Calcular prej�", exiba uma frase como esta:
+
+
+    Seu carro vai sair por um total de R$A. Ap�s 1 m�s, ele j� vai valer s� R$B. Porque comprou financiado, vai pagar o correspondente a C carros.
+
+Onde:
+
+   A - O total pago ap�s o final do financiamento. #Ficadica: A taxa de juros � simplesmente a raz�o de uma PG (se a taxa for 5, a raz�o � 1.05, se a taxa for 3, a raz�o � 1.03, se a taxa for 6,5, a raz�o � 1.065) e o primeiro termo da PG � num financiamento � sempre o valor do bem dividido pela quantidade de parcelas. Exiba este valor com 2 casas decimais.
+
+   B - O valor do carro a vista menos 20%. #Ficadica: Para "tirar" 20% de um valor, basta obter 80% dele, ou seja, multiplicar ele por 0.8. Exiba este valor com 2 casas decimais.
+
+   C - A quantidade de "carros" que comprou financiado, se comparado com o valor a vista. Ex: A vista seria 40.000, mas financiado ficou em 80.000. Nesse caso, C tem que dar 2. Ex2: A vista seria 50.000, mas financiado ficou em 140.000. Nesse caso, C tem que dar 2.8. #ficadica: para calcular este valor, basta fazer a soma dos termos de uma PG finita (veja aqui) Exiba este valor com 1 casa decimal.

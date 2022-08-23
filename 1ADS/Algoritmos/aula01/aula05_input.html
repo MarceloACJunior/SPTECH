@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AULA05-inpit</title>
+</head>
+<body>
+    <h1>alert</h1>
+    <br>
+    Entre com o seu nome: <input id="ipt_nome" type="text">
+    <br>
+    Entre com o seu sobrenome: <input id="ipt_sobrenome" type="text">
+    <!--
+        A tag input cria um campo para entrada de dados
+        Vamos SEMPRE usar o type="text" (ou omitir este atributo)
+        Vamos SEMPRE usar o atributo id
+        
+        Regras para valor de id: 
+        1. começar com letra minúsculas 
+        2. não começar com número, mas pode ter número no meio ou fim
+        3. Recomendação: a cada "palavra", usar "_" (underline)
+            ex: telefone_comercial, quantidade_filhos
+        4. NÃO pode ter espaço em branco
+        5. NÃO usar nomes de tags (body, h3, img, div etc)
+        6. NÃO usar caracteres especiais (acentos, cedilha, etc)
+
+        A tag <input> possui outros atributos, por exemplo:
+            o placeholder cria um texto temporário dentro do próprio campo
+            o autofocus terá o cursor nele quando a pagina for carregada
+    
+    -->
+    <br>
+    <button onclick="mostrarSeparado()">Separado</button> 
+    <button onclick="mostrarJunto()">Junto</button>
+</body>
+</html>
+<script>
+    function mostrarSeparado() {
+        alert("O primeiro nome é: " + ipt_nome.value)
+        alert("O sobrenome é: " + ipt_sobrenome.value)
+    }
+    function mostrarJunto() {
+        alert(ipt_nome.value + " " + ipt_sobrenome.value)
+    }
+    
+    /* Na tag <script> para usarmos o que foi digitado em uma
+        tag <input> é necessário utilizar o id da tab precedido 
+        de .value. Por exemplo ipt_nome.value
+
+       
+    CONCATENAÇÃO  
+        Quando precisamos juntar mais de uma informação em uma
+        mensagem no fazemos uma concatenação.      
+        A concatenação é feita com o simbolo "+" (sinal de mais)
+            alert("O sobrenome é: " + ipt_sobrenome.value)
+    */
+</script>

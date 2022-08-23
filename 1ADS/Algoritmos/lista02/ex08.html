@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 08</title>
+</head>
+
+<body>
+    <h1>Exercicio 08</h1>
+    <h2>Lista 02</h2>
+
+    <label for="torneira1">Quantos minutos a torneira 1 ficou pingando: </label>
+    <input type="text" name="torneira1" id="torneira1">
+    <br>
+    <label for="torneira2">Quantos minutos a torneira 2 ficou pingando: </label>
+    <input type="text" name="torneira2" id="torneira2">
+    <br>
+    <label for="torneira3">Quantos minutos a torneira 3 ficou pingando: </label>
+    <input type="text" name="torneira3" id="torneira3">
+    <br>
+    <button onclick="calcular()">Calcular</button>
+</body>
+
+</html>
+
+<script>
+    function calcular() {
+        alert("Suas 3 torneiras, juntas, desperdiçaram " + (Number(torneira1.value * 15) + Number(torneira2.value * 15) + Number(torneira3.value * 15)) + " litros de água")
+    }
+</script>

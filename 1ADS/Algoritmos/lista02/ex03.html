@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 03</title>
+</head>
+
+<body>
+    <h1>Exercicio 03</h1>
+    <h2>Lista 03</h2>
+
+    <label for="valor">Digite o valor da passagem</label>
+    <input type="text" id="valor" name="valor">
+    <label for="viagens">Quantas viagens você fará por mês ?</label>
+    <input type="text" id="viagens" name="viagens">
+    <button onclick="economia()">Ver economia</button>
+</body>
+
+</html>
+
+<script>
+    function economia() {
+        alert("Você economizará R$" + (Number(valor.value) / 2) * (Number(viagens.value)) + " por mês" );
+    }
+</script>
